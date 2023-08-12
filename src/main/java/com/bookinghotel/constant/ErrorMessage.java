@@ -50,4 +50,15 @@ public class ErrorMessage {
         public static final String ERR_NEW_PASSWORD_EQUAL_OLD_PASSWORD = "New password and old password cannot be the same";
     }
 
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Room {
+        public static final String ERR_NOT_FOUND_ID = "Room not found with id: %s";
+        public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Room not found with id %s in the trash";
+        public static final String ERR_NO_PHOTO = "Room needs a photo to describe";
+        public static final String ERR_ROOM_UNAVAILABLE = "Sorry, this room is currently unavailable. Please choose another room";
+        public static final String ROOM_HAS_BEEN_DISCOUNTED = "Room %s has been discounted";
+        public static final String ROOM_NOT_FOR_SALE = "Room %s not for sale %s";
+        public static final String ROOM_NO_SALE = "Room %s not for sale";
+    }
+
 }
