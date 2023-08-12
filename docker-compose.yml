@@ -6,12 +6,12 @@ services:
     restart: always
     build: .
     ports:
-      - "8080:8080"
+      - "8090:8080"
     environment:
       MYSQL_HOST: mysqldb
       MYSQL_USER: root
-      MYSQL_PASSWORD: 123456789
-      MYSQL_PORT: 3306
+      MYSQL_PASSWORD: hit@18082010
+      MYSQL_PORT: 4006
     depends_on:
       - mysqldb
     networks:
@@ -21,11 +21,11 @@ services:
     image: mysql:8
     restart: always
     ports:
-      - "3307:3306"
+      - "4006:3306"
     volumes:
       - mysqldb:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD = 123456789
+      - MYSQL_ROOT_PASSWORD = hit@18082010
       - MYSQL_DATABASE = hotel
     networks:
       - booking-hotel-network
