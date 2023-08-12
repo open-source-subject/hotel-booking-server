@@ -7,7 +7,7 @@ import com.bookinghotel.dto.UserUpdateDTO;
 import com.bookinghotel.dto.common.CreatedByDTO;
 import com.bookinghotel.dto.common.LastModifiedByDTO;
 import com.bookinghotel.entity.User;
-import com.bookinghotel.projection.StatisticCustomerTopBookingProjection;
+import com.bookinghotel.repository.projection.StatisticCustomerTopBookingProjection;
 import org.mapstruct.*;
 
 import java.util.List;
