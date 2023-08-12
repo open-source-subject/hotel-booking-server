@@ -18,9 +18,7 @@ public interface UserMapper {
 
     User toUser(UserCreateDTO userCreateDTO);
 
-    @Mappings({
-            @Mapping(target = "roleName", source = "user.role.roleName"),
-    })
+    @Mapping(target = "roleName", source = "user.role.roleName")
     UserDTO toUserDTO(User user);
 
     UserSummaryDTO toUserSummaryDTO(User user);

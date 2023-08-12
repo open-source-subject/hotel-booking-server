@@ -23,6 +23,20 @@ public class ErrorMessage {
     public static final String INVALID_FORMAT_SOME_THING_FIELD = "Invalid format";
 
     @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Auth {
+        public static final String ERR_INCORRECT_AUTHENTICATION = "Username or password incorrect";
+        public static final String ERR_DUPLICATE_EMAIL = "Email is already taken";
+        public static final String ERR_DUPLICATE_PASSWORD = "The new password must be different from the old password";
+        public static final String ERR_ACCOUNT_NOT_ENABLED = "This account is not enabled";
+        public static final String ERR_ACCOUNT_LOCKED = "This account has been locked";
+
+        //error token verification
+        public static final String INVALID_TOKEN = "Invalid token";
+        public static final String EXPIRED_TOKEN = "Token has expired";
+        public static final String INCORRECT_TOKEN = "Incorrect token";
+    }
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
     public static class User {
         public static final String ERR_NOT_FOUND_EMAIL_OR_PHONE = "User not found with this email or phone: %s";
         public static final String ERR_NOT_FOUND_ID = "User not found with id: %s";
