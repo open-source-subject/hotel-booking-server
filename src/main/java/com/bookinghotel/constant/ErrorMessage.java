@@ -67,4 +67,17 @@ public class ErrorMessage {
         public static final String ERR_CAN_NOT_UPDATE_OR_DELETED = "This room rating is not yours and cannot be updated or deleted";
     }
 
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Sale {
+        public static final String ERR_NOT_FOUND_ID = "Sale not found with id: %s";
+        public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Sale not found with id %s in the trash";
+        public static final String ERR_CAN_NOT_PERMANENTLY_DELETED = "Sale must be in the trash to be permanently deleted";
+    }
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Media {
+        public static final String ERR_NOT_FOUND_ID = "Media not found with id: %s";
+        public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Media not found with id: %s in the trash";
+    }
+
 }
