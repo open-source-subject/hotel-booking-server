@@ -61,4 +61,10 @@ public class ErrorMessage {
         public static final String ROOM_NO_SALE = "Room %s not for sale";
     }
 
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class RoomRating {
+        public static final String ERR_NOT_FOUND_ID = "Room rating not found with id: %s";
+        public static final String ERR_CAN_NOT_UPDATE_OR_DELETED = "This room rating is not yours and cannot be updated or deleted";
+    }
+
 }
