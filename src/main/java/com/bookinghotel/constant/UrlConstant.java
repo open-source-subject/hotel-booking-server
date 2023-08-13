@@ -71,22 +71,20 @@ public class UrlConstant {
         }
     }
 
-    public static class Sale {
-        private static final String PRE_FIX = "/sale";
+    public static class Post {
+        private static final String PRE_FIX = "/post";
 
-        public static final String GET_SALES = PRE_FIX;
-        public static final String GET_SALE = PRE_FIX + "/{saleId}";
+        public static final String GET_POSTS = PRE_FIX;
+        public static final String GET_POSTS_FOR_ADMIN = PRE_FIX + "/admin";
+        public static final String GET_POST = PRE_FIX + "/{postId}";
 
-        public static final String CREATE_SALE = PRE_FIX + "/create";
-        public static final String UPDATE_SALE = PRE_FIX + "/update/{saleId}";
-        public static final String DELETE_SALE = PRE_FIX + "/delete/{saleId}";
-        public static final String DELETE_SALE_PERMANENTLY = PRE_FIX + "/delete/trash/{saleId}";
-        public static final String RESTORE_SALE = PRE_FIX + "/restore/{saleId}";
+        public static final String CREATE_POST = PRE_FIX + "/create";
+        public static final String UPDATE_POST = PRE_FIX + "/update/{postId}";
+        public static final String DELETE_POST = PRE_FIX + "/delete/{postId}";
+        public static final String DELETE_POST_PERMANENTLY = PRE_FIX + "/delete/trash/{postId}";
+        public static final String RESTORE_POST = PRE_FIX + "/restore/{postId}";
 
-        public static final String ADD_SALE_TO_ROOM = PRE_FIX + "/add/room/{saleId}";
-        public static final String REMOVE_SALE_FROM_ROOMS = PRE_FIX + "/remove/room";
-
-        private Sale() {
+        private Post() {
         }
     }
 
