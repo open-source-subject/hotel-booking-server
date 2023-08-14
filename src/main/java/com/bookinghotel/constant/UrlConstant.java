@@ -99,4 +99,20 @@ public class UrlConstant {
         }
     }
 
+    public static class Product {
+        private static final String PRE_FIX = "/product";
+
+        public static final String GET_PRODUCTS = PRE_FIX;
+        public static final String GET_PRODUCTS_FOR_ADMIN = PRE_FIX + "/admin";
+        public static final String GET_PRODUCT = PRE_FIX + "/{productId}";
+
+        public static final String CREATE_PRODUCT = PRE_FIX + "/create";
+        public static final String UPDATE_PRODUCT = PRE_FIX + "/update/{productId}";
+        public static final String DELETE_PRODUCTS = PRE_FIX + "/delete/{productId}";
+        public static final String DELETE_PRODUCT_PERMANENTLY = PRE_FIX + "/delete/trash/{productId}";
+        public static final String RESTORE_PRODUCT = PRE_FIX + "/restore/{productId}";
+
+        private Product() {
+        }
+    }
 }

@@ -79,4 +79,10 @@ public class ErrorMessage {
         public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Media not found with id: %s in the trash";
     }
 
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Product {
+        public static final String ERR_NOT_FOUND_ID = "Product not found with id: %s";
+        public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Product not found with id: %s in the trash";
+        public static final String ERR_PRODUCT_MUST_HAVE_THUMBNAIL = "Product must have a thumbnail";
+    }
 }
