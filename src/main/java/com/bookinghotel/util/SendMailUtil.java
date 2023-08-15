@@ -4,6 +4,7 @@ import com.bookinghotel.dto.common.DataMailDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 import org.thymeleaf.TemplateEngine;
@@ -22,6 +23,7 @@ public class SendMailUtil {
 
     private final TemplateEngine templateEngine;
 
+    @Async
     public void sendEmailWithHTML(DataMailDTO mail, String template) throws Exception {
         MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
@@ -36,6 +38,7 @@ public class SendMailUtil {
         mailSender.send(message);
     }
 
+    @Async
     public void sendMail(DataMailDTO dataMail, MultipartFile[] files) throws MessagingException {
         MimeMessage message = mailSender.createMimeMessage();
 

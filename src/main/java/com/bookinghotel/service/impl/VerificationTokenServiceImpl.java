@@ -8,6 +8,8 @@ import com.bookinghotel.repository.VerificationTokenRepository;
 import com.bookinghotel.service.VerificationTokenService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.ObjectUtils;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
@@ -19,6 +21,9 @@ import java.util.UUID;
 public class VerificationTokenServiceImpl implements VerificationTokenService {
 
     private final VerificationTokenRepository verificationTokenRepository;
+
+    @Qualifier("threadPoolTaskExecutorHotelBooking")
+    private final ThreadPoolTaskExecutor threadPoolTaskExecutor;
 
     @Override
     public VerificationToken getByToken(String token) {
@@ -53,7 +58,7 @@ public class VerificationTokenServiceImpl implements VerificationTokenService {
         Calendar cal = Calendar.getInstance();
         for (VerificationToken verificationToken : verificationTokenList) {
             if ((verificationToken.getExpirationTime().getTime() - cal.getTime().getTime()) <= 0) {
-                verificationTokenRepository.delete(verificationToken);
+                threadPoolTaskExecutor.execute(() -> verificationTokenRepository.delete(verificationToken));
             }
         }
     }

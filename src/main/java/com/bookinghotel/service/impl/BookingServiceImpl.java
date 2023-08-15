@@ -29,8 +29,10 @@ import com.bookinghotel.util.SendMailUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.ObjectUtils;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.security.core.GrantedAuthority;
 
 import javax.transaction.Transactional;
@@ -61,6 +63,9 @@ public class BookingServiceImpl implements BookingService {
 
     private final UserInfoProperties userInfoProperties;
 
+    @Qualifier("threadPoolTaskExecutorHotelBooking")
+    private final ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
     @Override
     public BookingDTO getBookingById(Long bookingId) {
         BookingProjection booking = bookingRepository.findBookingProjectionById(bookingId);
@@ -77,7 +82,7 @@ public class BookingServiceImpl implements BookingService {
         //Create Output
         PagingMeta meta = PaginationUtil.buildPagingMeta(requestDTO, SortByDataConstant.BOOKING, bookings);
         List<BookingDTO> bookingDTOs = mapperToBookingDTOs(bookings.getContent());
-        return new PaginationResponseDTO<BookingDTO>(meta, bookingDTOs);
+        return new PaginationResponseDTO<>(meta, bookingDTOs);
     }
 
     @Override
@@ -90,7 +95,7 @@ public class BookingServiceImpl implements BookingService {
         //Create Output
         PagingMeta meta = PaginationUtil.buildPagingMeta(requestDTO, SortByDataConstant.BOOKING, bookings);
         List<BookingDTO> bookingDTOs = mapperToBookingDTOs(bookings.getContent());
-        return new PaginationResponseDTO<BookingDTO>(meta, bookingDTOs);
+        return new PaginationResponseDTO<>(meta, bookingDTOs);
     }
 
     @Override
@@ -185,25 +190,26 @@ public class BookingServiceImpl implements BookingService {
         for (Booking booking : bookings) {
             LocalDateTime expectedCheckIn = booking.getExpectedCheckIn().plusHours(CommonConstant.LATE_CHECKIN_HOURS);
             if (expectedCheckIn.isBefore(now)) {
-                User userBooking = booking.getUser();
-                userBooking.setIsLocked(CommonConstant.TRUE);
-                userRepository.save(userBooking);
-                booking.setStatus(BookingStatus.CANCEL);
-                booking.setNote("Customer refuse to check in");
-                bookingRepository.save(booking);
-                //set data mail
-                dataMailDTO.setTo(userBooking.getEmail());
-                Map<String, Object> properties = new HashMap<>();
-                properties.put("name", userBooking.getLastName() + " " + userBooking.getFirstName());
-                properties.put("hotline", userInfoProperties.getHotline());
-                dataMailDTO.setProperties(properties);
-                try {
-                    sendMail.sendEmailWithHTML(dataMailDTO, CommonMessage.ACCOUNT_LOCK_NOTICE_TEMPLATE);
-                    log.info(String.format("Successfully locked account %s refusal to check in",
-                            userBooking.getEmail()));
-                } catch (Exception ex) {
-                    throw new InternalServerException(ErrorMessage.ERR_EXCEPTION_GENERAL);
-                }
+                threadPoolTaskExecutor.execute(() -> {
+                    User userBooking = booking.getUser();
+                    userBooking.setIsLocked(CommonConstant.TRUE);
+                    userRepository.save(userBooking);
+                    booking.setStatus(BookingStatus.CANCEL);
+                    booking.setNote("Customer refuse to check in");
+                    bookingRepository.save(booking);
+                    //set data mail
+                    dataMailDTO.setTo(userBooking.getEmail());
+                    Map<String, Object> properties = new HashMap<>();
+                    properties.put("name", userBooking.getLastName() + " " + userBooking.getFirstName());
+                    properties.put("hotline", userInfoProperties.getHotline());
+                    dataMailDTO.setProperties(properties);
+                    try {
+                        sendMail.sendEmailWithHTML(dataMailDTO, CommonMessage.ACCOUNT_LOCK_NOTICE_TEMPLATE);
+                        log.info(String.format("Successfully locked account %s refusal to check in", userBooking.getEmail()));
+                    } catch (Exception ex) {
+                        throw new InternalServerException(ErrorMessage.ERR_EXCEPTION_GENERAL);
+                    }
+                });
             }
         }
     }
