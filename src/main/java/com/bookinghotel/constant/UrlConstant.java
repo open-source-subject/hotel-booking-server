@@ -116,6 +116,24 @@ public class UrlConstant {
         }
     }
 
+    public static class Service {
+        private static final String PRE_FIX = "/service";
+
+        public static final String GET_SERVICES = PRE_FIX;
+        public static final String GET_SERVICES_FOR_ADMIN = PRE_FIX + "/admin";
+        public static final String GET_SERVICE = PRE_FIX + "/{serviceId}";
+        public static final String GET_PRODUCTS_BY_SERVICE = PRE_FIX + "/{serviceId}/products";
+
+        public static final String CREATE_SERVICE = PRE_FIX + "/create";
+        public static final String UPDATE_SERVICE = PRE_FIX + "/update/{serviceId}";
+        public static final String DELETE_SERVICE = PRE_FIX + "/delete/{serviceId}";
+        public static final String DELETE_SERVICE_PERMANENTLY = PRE_FIX + "/delete/trash/{serviceId}";
+        public static final String RESTORE_SERVICE = PRE_FIX + "/restore/{serviceId}";
+
+        private Service() {
+        }
+    }
+
     public static class Sale {
         private static final String PRE_FIX = "/sale";
 
