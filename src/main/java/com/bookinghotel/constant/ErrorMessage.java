@@ -85,4 +85,11 @@ public class ErrorMessage {
         public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Product not found with id: %s in the trash";
         public static final String ERR_PRODUCT_MUST_HAVE_THUMBNAIL = "Product must have a thumbnail";
     }
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Sale {
+        public static final String ERR_NOT_FOUND_ID = "Sale not found with id: %s";
+        public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Sale not found with id %s in the trash";
+        public static final String ERR_CAN_NOT_PERMANENTLY_DELETED = "Sale must be in the trash to be permanently deleted";
+    }
 }
