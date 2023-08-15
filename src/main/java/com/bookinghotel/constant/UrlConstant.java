@@ -153,4 +153,21 @@ public class UrlConstant {
         }
     }
 
+    public static class Booking {
+        private static final String PRE_FIX = "/booking";
+
+        public static final String GET_BOOKINGS_FOR_USER = PRE_FIX + "/user";
+        public static final String GET_BOOKINGS_FOR_ADMIN = PRE_FIX + "/admin";
+        public static final String GET_BOOKING = PRE_FIX + "/{bookingId}";
+
+        public static final String CREATE_BOOKING = PRE_FIX + "/create";
+        public static final String UPDATE_BOOKING = PRE_FIX + "/update/{bookingId}";
+        public static final String CHECK_IN_BOOKING = PRE_FIX + "/check-in/{bookingId}";
+        public static final String CHECK_OUT_PAYMENT = PRE_FIX + "/check-out/{bookingId}";
+        public static final String CANCEL_BOOKING = PRE_FIX + "/cancel/{bookingId}";
+
+        private Booking() {
+        }
+    }
+
 }

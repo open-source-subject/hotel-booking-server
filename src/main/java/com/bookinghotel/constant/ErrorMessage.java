@@ -99,4 +99,13 @@ public class ErrorMessage {
         public static final String ERR_NOT_FOUND_ID_IN_TRASH = "Sale not found with id %s in the trash";
         public static final String ERR_CAN_NOT_PERMANENTLY_DELETED = "Sale must be in the trash to be permanently deleted";
     }
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Booking {
+        public static final String ERR_NOT_FOUND_ID = "Booking not found with id: %s";
+        public static final String ERR_NOT_CHECKIN = "This booking has not been checked in, cannot be checked out";
+        public static final String ERR_BOOKING_NOT_ROOM = "The room in the booking cannot be left empty";
+        public static final String ERR_CAN_NOT_CANCEL_BOOKING = "You can only cancel your booking one day in advance";
+        public static final String ERR_NO_PERMISSION_TO_CANCEL_BOOKING = "This booking is not yours and cannot be cancelled";
+    }
 }
