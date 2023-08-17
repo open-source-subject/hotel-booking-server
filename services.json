@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Buffet đặc biệt",
+    "price": 450000,
+    "description": "Tại Thanh Huong Hotel, chúng tôi biết cách làm cho một ngày trở nên tươi sáng và khó quên. Thưởng thức bữa ăn tuyệt vời tại nhà hàng đáng yêu của chúng tôi với chi phí 450.000đ cho mỗi người.",
+    "thumbnail": "init/service/buffet-dinner.png",
+    "products": [
+      {
+        "name": "Lẩu thái hải sản",
+        "thumbnail": "init/product/buffet-dinner/13-lau-thai-hai-san.jpg"
+      },
+      {
+        "name": "Khoai tây chiên",
+        "thumbnail": "init/product/buffet-dinner/1-khoai-tay-chien.jpg"
+      },
+      {
+        "name": "Salad cá hồi chanh dây",
+        "thumbnail": "init/product/buffet-dinner/2-salad-ca-hoi-chanh-day.jpg"
+      },
+      {
+        "name": "Gỏi cuốn tôm thịt",
+        "thumbnail": "init/product/buffet-dinner/3-goi-cuon-tom-thit.jpg"
+      },
+      {
+        "name": "Bề bề hấp",
+        "thumbnail": "init/product/buffet-dinner/4-be-be-hap.jpg"
+      },
+      {
+        "name": "Tôm càng xanh nướng",
+        "thumbnail": "init/product/buffet-dinner/5-tom-cang-xanh-nuong.jpg"
+      },
+      {
+        "name": "Tôm sú sốt ớt",
+        "thumbnail": "init/product/buffet-dinner/6-tom-su-sot-ot.jpg"
+      },
+      {
+        "name": "Cua rang muối",
+        "thumbnail": "init/product/buffet-dinner/7-cua-rang-muoi.jpg"
+      },
+      {
+        "name": "Ghẹ rang muối ớt",
+        "thumbnail": "init/product/buffet-dinner/8-ghe-rang-muoi-ot.jpg"
+      },
+      {
+        "name": "Mực nướng muối ớt",
+        "thumbnail": "init/product/buffet-dinner/9-muc-nuong-muoi-ot.jpg"
+      },
+      {
+        "name": "Mực hấp hành gừng",
+        "thumbnail": "init/product/buffet-dinner/10-muc-hap-hanh-gung.jpg"
+      },
+      {
+        "name": "Sò nướng mỡ hành",
+        "thumbnail": "init/product/buffet-dinner/11-so-nuong-mo-hanh.jpg"
+      },
+      {
+        "name": "Sò mía hấp",
+        "thumbnail": "init/product/buffet-dinner/12-so-mia-hap.jpg"
+      },
+      {
+        "name": "Sò dương",
+        "thumbnail": "init/product/buffet-dinner/18-so-duong.jpg"
+      },
+      {
+        "name": "Rau muống",
+        "thumbnail": "init/product/buffet-dinner/14-rau-muong.jpg"
+      },
+      {
+        "name": "Súp lơ",
+        "thumbnail": "init/product/buffet-dinner/15-sup-lo.jpg"
+      },
+      {
+        "name": "Trứng chiên",
+        "thumbnail": "init/product/buffet-dinner/16-trung-chien.jpg"
+      },
+      {
+        "name": "Tôm thịt kho tiêu",
+        "thumbnail": "init/product/buffet-dinner/17-tom-thit-kho-tieu.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Dịch vụ Spa",
+    "price": 1050000,
+    "description": "Khách sạn chúng tôi cung cấp các dịch vụ Spa để giúp anh/chị có thể thư giản và làm đẹp.",
+    "thumbnail": "init/service/spa.jpg",
+    "products": [
+      {
+        "name": "Massage thư giãn",
+        "thumbnail": "init/product/spa/1-message-thu-gian.png",
+        "description": "Massage thư giãn sử dụng liệu pháp xoa bóp để giảm đau nhức cơ - như một liều thuốc giảm đau tự nhiên, đồng thời cũng giúp giảm stress – căng thẳng và giúp tăng cường hệ thống miễn dịch."
+      },
+      {
+        "name": "Xông hơi",
+        "thumbnail": "init/product/spa/2-xong-hoi.png",
+        "description": "Liệu pháp spa này không chỉ giúp khách sử dụng dịch vụ giải tỏa căng thẳng mà còn được xem là một liệu pháp điều trị bệnh – thải chất độc ra ngoài thông qua đường tiết mồ hôi. Hơi nóng trong phòng xông hơi giúp làm dãn mạch máu dưới da, tăng cường lưu thông khí huyết. Liệu pháp spa này còn có ý nghĩa trong việc làm đẹp bởi nếu khách hàng sử dụng dịch vụ xông hơi có tinh dầu sẽ đem lại làn da sáng khỏe."
+      },
+      {
+        "name": "Chăm sóc da mặt",
+        "thumbnail": "init/product/spa/3-cham-soc-da-mat.png",
+        "description": "Chăm sóc da mặt bao gồm: chăm sóc da bằng vitamin C cơ bản, chăm sóc da bằng vitamin C chuyên sâu, chăm sóc da mặt bằng than hoạt tính, điều trị mụn bằng công nghệ IPL, trẻ hóa da bằng công nghệ Lazer Fractional CO2, điều trị nám – tàn nhang – sắc tố da bằng công nghệ PRP + tế bào gốc…"
+      },
+      {
+        "name": "Triệt lông",
+        "thumbnail": "init/product/spa/4-triet-long.jpg",
+        "description": "Giúp chị em sở hữu vẻ ngoài tự tin khi diện các bộ đầm đi ăn tiệc hay mặc đồ thoải mái hơn khi đi chơi. Triệt ria mép, triệt lông mặt, triệt lông nách, triệt lông tay – chân…"
+      },
+      {
+        "name": "Tắm trắng – tắm dưỡng",
+        "thumbnail": "init/product/spa/5-tam-trang-duong-da.jpg",
+        "description": "Phục vụ nhu cầu sở hữu làn da trắng sáng – mịn màn của phụ nữ Á đông. Spa của khách sạn chúng tôi hiện đang áp dụng rất nhiều phương pháp tắm trắng khác nhau: bằng thảo dược, tinh chất cám gạo ngọc trai – lúa mạch cao cấp, tinh chất vitamin tổng hợp, công nghệ Nano White… Còn với liệu trình tắm dưỡng bao gồm: tẩy da chết toàn thân bằng tinh chất cám gạo, ngũ cốc; tẩy da chết bằng muối biển nhật Bản; tẩy da chết, ủ dưỡng, trắng da; tắm dưỡng bằng tinh chất vừng đen, yến mạch, sữa non…"
+      }
+    ]
+  },
+  {
+    "title": "Dịch vụ Lướt Sóng",
+    "price": 250000,
+    "description": "Tìm hiểu những điều cơ bản về lướt sóng trong bãi biển của chúng tôi. Chỉ với 250.000đ bạn sẽ được trang bị những thiết bị cần thiết và có khoảng thời gian tuyệt vời bên gia đình và sẽ học được một hoạt động thú vị.",
+    "thumbnail": "init/service/luot-song.png",
+    "products": [
+      {
+        "name": "Ván Lướt Sóng Bằng Động Cơ Thủy Lực",
+        "thumbnail": "init/product/luot-song/van-luot-song.jpg",
+        "description": "Ván lướt sóng với động cơ thủy lực cao cấp giúp bạn có những trải nghiệm tuyệt vời nhất."
+      },
+      {
+        "name": "Áo Phao Bảo Hộ Cao Su",
+        "thumbnail": "init/product/luot-song/ao-bao-ho.webp",
+        "description": "Áo phao bảo hộ cho các môn thể thao dưới nước."
+      }
+    ]
+  }
+]
+
