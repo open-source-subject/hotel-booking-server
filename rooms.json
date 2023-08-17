@@ -12,7 +12,7 @@
       "medias": [
         {
           "url": "init/room/standard-single/1-standard-single.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -28,7 +28,7 @@
       "medias": [
         {
           "url": "init/room/standard-single/1-standard-single.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -44,7 +44,7 @@
       "medias": [
         {
           "url": "init/room/standard-single/1-standard-single.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -60,7 +60,7 @@
       "medias": [
         {
           "url": "init/room/standard-single/1-standard-single.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -76,7 +76,7 @@
       "medias": [
         {
           "url": "init/room/standard-single/1-standard-single.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -94,7 +94,7 @@
       "medias": [
         {
           "url": "init/room/standard-double/1-standard-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -110,7 +110,7 @@
       "medias": [
         {
           "url": "init/room/standard-double/1-standard-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -126,7 +126,7 @@
       "medias": [
         {
           "url": "init/room/standard-double/1-standard-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -142,7 +142,7 @@
       "medias": [
         {
           "url": "init/room/standard-double/1-standard-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -158,7 +158,7 @@
       "medias": [
         {
           "url": "init/room/standard-double/1-standard-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -176,7 +176,7 @@
       "medias": [
         {
           "url": "init/room/standard-twin/1-standard-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -192,7 +192,7 @@
       "medias": [
         {
           "url": "init/room/standard-twin/1-standard-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -208,7 +208,7 @@
       "medias": [
         {
           "url": "init/room/standard-twin/1-standard-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -224,7 +224,7 @@
       "medias": [
         {
           "url": "init/room/standard-twin/1-standard-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -240,7 +240,7 @@
       "medias": [
         {
           "url": "init/room/standard-twin/1-standard-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -258,7 +258,7 @@
       "medias": [
         {
           "url": "init/room/superior-double/1-superior-double.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -274,7 +274,7 @@
       "medias": [
         {
           "url": "init/room/superior-double/1-superior-double.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -290,7 +290,7 @@
       "medias": [
         {
           "url": "init/room/superior-double/1-superior-double.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -306,7 +306,7 @@
       "medias": [
         {
           "url": "init/room/superior-double/1-superior-double.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -322,7 +322,7 @@
       "medias": [
         {
           "url": "init/room/superior-double/1-superior-double.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -340,7 +340,7 @@
       "medias": [
         {
           "url": "init/room/superior-twin/1-superior-twin.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -356,7 +356,7 @@
       "medias": [
         {
           "url": "init/room/superior-twin/1-superior-twin.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -372,7 +372,7 @@
       "medias": [
         {
           "url": "init/room/superior-twin/1-superior-twin.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -388,7 +388,7 @@
       "medias": [
         {
           "url": "init/room/superior-twin/1-superior-twin.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -404,7 +404,7 @@
       "medias": [
         {
           "url": "init/room/superior-twin/1-superior-twin.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -422,7 +422,7 @@
       "medias": [
         {
           "url": "init/room/superior-king/1-superior-king.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -438,7 +438,7 @@
       "medias": [
         {
           "url": "init/room/superior-king/1-superior-king.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -454,7 +454,7 @@
       "medias": [
         {
           "url": "init/room/superior-king/1-superior-king.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -470,7 +470,7 @@
       "medias": [
         {
           "url": "init/room/superior-king/1-superior-king.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -486,7 +486,7 @@
       "medias": [
         {
           "url": "init/room/superior-king/1-superior-king.png",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -504,7 +504,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-double/1-deluxe-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -520,7 +520,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-double/1-deluxe-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -536,7 +536,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-double/1-deluxe-double.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -554,7 +554,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-double-sea-view/1-deluxe-double-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -570,7 +570,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-double-sea-view/1-deluxe-double-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -586,7 +586,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-double-sea-view/1-deluxe-double-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -602,7 +602,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-double-sea-view/1-deluxe-double-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -620,7 +620,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-twin/1-deluxe-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -636,7 +636,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-twin/1-deluxe-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -652,7 +652,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-twin/1-deluxe-twin.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -670,7 +670,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-twin-sea-view/1-deluxe-twin-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -686,7 +686,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-twin-sea-view/1-deluxe-twin-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -702,7 +702,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-twin-sea-view/1-deluxe-twin-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -718,7 +718,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-twin-sea-view/1-deluxe-twin-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -736,7 +736,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-king/1-deluxe-king.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -752,7 +752,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-king/1-deluxe-king.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -768,7 +768,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-king/1-deluxe-king.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -786,7 +786,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-king-sea-view/1-deluxe-king-sea-view.webp",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -802,7 +802,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-king-sea-view/1-deluxe-king-sea-view.webp",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -818,7 +818,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-king-sea-view/1-deluxe-king-sea-view.webp",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -834,7 +834,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-king-sea-view/1-deluxe-king-sea-view.webp",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -852,7 +852,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-triple/1-deluxe-triple.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -868,7 +868,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-triple/1-deluxe-triple.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -884,7 +884,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-triple/1-deluxe-triple.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -902,7 +902,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-triple-sea-view/1-deluxe-triple-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -918,7 +918,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-triple-sea-view/1-deluxe-triple-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -934,7 +934,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-triple-sea-view/1-deluxe-triple-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -950,7 +950,7 @@
       "medias": [
         {
           "url": "init/room/deluxe-triple-sea-view/1-deluxe-triple-sea-view.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -968,7 +968,7 @@
       "medias": [
         {
           "url": "init/room/junior-suite/1-junior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -984,7 +984,7 @@
       "medias": [
         {
           "url": "init/room/junior-suite/1-junior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -1000,7 +1000,7 @@
       "medias": [
         {
           "url": "init/room/junior-suite/1-junior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -1016,7 +1016,7 @@
       "medias": [
         {
           "url": "init/room/junior-suite/1-junior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -1034,15 +1034,15 @@
       "medias": [
         {
           "url": "init/room/family-suite/1-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/family-suite/2-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/family-suite/3-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -1058,15 +1058,15 @@
       "medias": [
         {
           "url": "init/room/family-suite/1-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/family-suite/2-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/family-suite/3-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -1082,15 +1082,15 @@
       "medias": [
         {
           "url": "init/room/family-suite/1-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/family-suite/2-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/family-suite/3-family-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -1108,23 +1108,23 @@
       "medias": [
         {
           "url": "init/room/senior-suite/1-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/2-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/3-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/4-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/5-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     },
@@ -1140,23 +1140,23 @@
       "medias": [
         {
           "url": "init/room/senior-suite/1-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/2-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/3-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/4-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/senior-suite/5-senior-suite.jpg",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
@@ -1174,23 +1174,23 @@
       "medias": [
         {
           "url": "init/room/executive-suite/1-executive-suite.webp",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/executive-suite/2-executive-suite.webp",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/executive-suite/3-executive-suite.webp",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/executive-suite/4-executive-suite.webp",
-          "type": "Image"
+          "type": "IMAGE"
         },
         {
           "url": "init/room/executive-suite/5-executive-suite.webp",
-          "type": "Image"
+          "type": "IMAGE"
         }
       ]
     }
