@@ -14,9 +14,9 @@ public class AsyncConfig {
     @Bean(destroyMethod = "shutdown")
     public ThreadPoolTaskExecutor threadPoolTaskExecutorHotelBooking() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-        executor.setCorePoolSize(20);
-        executor.setMaxPoolSize(50);
-        executor.setQueueCapacity(100);
+        executor.setCorePoolSize(50);
+        executor.setMaxPoolSize(100);
+        executor.setQueueCapacity(200);
         executor.setKeepAliveSeconds(1);
         executor.setWaitForTasksToCompleteOnShutdown(true);
         executor.setThreadNamePrefix("Hotel-Booking-");
