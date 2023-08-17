@@ -19,6 +19,8 @@ public class UrlConstant {
 
         public static final String LOGOUT = PRE_FIX + "/logout";
 
+        public static final String VERIFY_TOKEN = PRE_FIX + "/verify-token";
+
         private Auth() {
         }
     }
@@ -170,4 +172,15 @@ public class UrlConstant {
         }
     }
 
+    public static class Statistic {
+        private static final String PRE_FIX = "/statistic";
+
+        public static final String STATISTIC_ROOM_BOOKED_MONTH = PRE_FIX + "/room-booked-month";
+        public static final String STATISTIC_CUSTOMER_TOP_BOOKING = PRE_FIX + "/top-booking";
+        public static final String STATISTIC_REVENUE = PRE_FIX + "/revenue";
+        public static final String STATISTIC_BOOKING_BY_STATUS = PRE_FIX + "/booking-status";
+
+        private Statistic() {
+        }
+    }
 }

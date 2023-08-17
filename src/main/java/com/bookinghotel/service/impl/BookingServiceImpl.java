@@ -27,7 +27,7 @@ import com.bookinghotel.service.BookingServiceDetailService;
 import com.bookinghotel.util.PaginationUtil;
 import com.bookinghotel.util.SendMailUtil;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
@@ -42,7 +42,7 @@ import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 
-@Log4j2
+@Slf4j
 @RequiredArgsConstructor
 @org.springframework.stereotype.Service
 public class BookingServiceImpl implements BookingService {
@@ -188,9 +188,9 @@ public class BookingServiceImpl implements BookingService {
         dataMailDTO.setSubject(CommonMessage.SUBJECT_ACCOUNT_LOCK_NOTICE);
         List<Booking> bookings = bookingRepository.findBookingUserByStatus(BookingStatus.PENDING.toString());
         for (Booking booking : bookings) {
-            LocalDateTime expectedCheckIn = booking.getExpectedCheckIn().plusHours(CommonConstant.LATE_CHECKIN_HOURS);
-            if (expectedCheckIn.isBefore(now)) {
-                threadPoolTaskExecutor.execute(() -> {
+            threadPoolTaskExecutor.execute(() -> {
+                LocalDateTime expectedCheckIn = booking.getExpectedCheckIn().plusHours(CommonConstant.LATE_CHECKIN_HOURS);
+                if (expectedCheckIn.isBefore(now)) {
                     User userBooking = booking.getUser();
                     userBooking.setIsLocked(CommonConstant.TRUE);
                     userRepository.save(userBooking);
@@ -203,14 +203,10 @@ public class BookingServiceImpl implements BookingService {
                     properties.put("name", userBooking.getLastName() + " " + userBooking.getFirstName());
                     properties.put("hotline", userInfoProperties.getHotline());
                     dataMailDTO.setProperties(properties);
-                    try {
-                        sendMail.sendEmailWithHTML(dataMailDTO, CommonMessage.ACCOUNT_LOCK_NOTICE_TEMPLATE);
-                        log.info(String.format("Successfully locked account %s refusal to check in", userBooking.getEmail()));
-                    } catch (Exception ex) {
-                        throw new InternalServerException(ErrorMessage.ERR_EXCEPTION_GENERAL);
-                    }
-                });
-            }
+                    sendMail.sendEmailWithHTML(dataMailDTO, CommonMessage.ACCOUNT_LOCK_NOTICE_TEMPLATE);
+                    log.info("Successfully locked account {} refuse to check in", userBooking.getEmail());
+                }
+            });
         }
     }
 
