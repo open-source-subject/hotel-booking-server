@@ -71,4 +71,10 @@ public class AuthController {
         return VsResponseUtil.ok(authService.verifyForgotPassword(email, token, newPassword));
     }
 
+    @Operation(summary = "API verify token")
+    @PostMapping(UrlConstant.Auth.VERIFY_TOKEN)
+    public ResponseEntity<?> verifyTOKEN(@RequestParam(name = "token") String token) {
+        return VsResponseUtil.ok(authService.verifyToken(token));
+    }
+
 }

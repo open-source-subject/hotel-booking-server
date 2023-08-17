@@ -183,4 +183,22 @@ public class UrlConstant {
         private Statistic() {
         }
     }
+
+    public static class ChatBot {
+        private static final String PRE_FIX = "/chatbot";
+
+        private static final String ROOM = PRE_FIX + "/room";
+        public static final String GET_ROOM_BY_TYPE = ROOM;
+        public static final String GET_ROOM_BY_ID = ROOM + "/{roomId}";
+
+        private static final String SERVICE = PRE_FIX + "/service";
+        public static final String GET_SERVICES = SERVICE;
+        public static final String GET_SERVICE = SERVICE + "/{serviceId}";
+
+        private static final String PRODUCT = PRE_FIX + "/product";
+        public static final String GET_PRODUCT = PRODUCT + "/{productId}";
+
+        private ChatBot() {
+        }
+    }
 }
