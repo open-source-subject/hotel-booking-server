@@ -21,4 +21,6 @@ public interface AuthService {
 
     CommonResponseDTO logout(HttpServletRequest request);
 
+    CommonResponseDTO verifyToken(String token);
+
 }

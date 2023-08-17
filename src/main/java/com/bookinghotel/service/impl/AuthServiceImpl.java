@@ -137,6 +137,14 @@ public class AuthServiceImpl implements AuthService {
         return new CommonResponseDTO(CommonConstant.TRUE, "Logged out successfully");
     }
 
+    @Override
+    public CommonResponseDTO verifyToken(String token) {
+        if(jwtTokenProvider.validateToken(token)) {
+            return new CommonResponseDTO(CommonConstant.TRUE, "SUCCESS");
+        }
+        throw new UnauthorizedException(ErrorMessage.UNAUTHORIZED);
+    }
+
     private CommonResponseDTO sendMailSignUp(User user, VerificationToken verificationToken) {
         try {
             DataMailDTO dataMailDTO = setDataMailDtoToSignUp(user, verificationToken);
