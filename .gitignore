@@ -1,8 +1,12 @@
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
-#!**/src/main/**/target/
-#!**/src/test/**/target/
+!**/src/main/**/target/classes
+!**/src/test/**/target/test-classes
+!**/src/test/**/target/generated-sources
+!**/src/test/**/target/generated-test-sources
+!**/src/test/**/target/maven-status
+!**/src/test/**/target/surefire-reports
 
 ### STS ###
 .apt_generated
